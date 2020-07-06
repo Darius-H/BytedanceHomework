@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!-- parent指的是屏幕边界 -->
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/im_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="100dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@mipmap/testpicture" />
+
+    <Switch
+        android:id="@+id/switch_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ImageControl"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bt_1" />
+
+    <EditText
+        android:id="@+id/et_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="108dp"
+        android:background="@null"
+        android:letterSpacing="1"
+        android:lineSpacingExtra="15dp"
+        android:lineSpacingMultiplier="2"
+        android:gravity="center_horizontal"
+        android:text="好好学习天天向上"
+        app:layout_constraintTop_toTopOf="@+id/bt_1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <SeekBar
+        android:id="@+id/sb_1"
+        android:layout_width="113dp"
+        android:layout_height="39dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/im_1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_1"
+        android:layout_marginTop="100dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
